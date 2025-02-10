@@ -34,6 +34,7 @@ body, * {
 /* Button */
 
 .btnMouse {
+    text-align: center;
     padding: 5px 10px;
     color: #f1c40f;
     background-color: transparent;

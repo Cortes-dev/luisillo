@@ -47,7 +47,6 @@
             background-color: green;
         }
 
-
     </style>
 
 </head>
@@ -158,46 +157,8 @@
         </div>
     </div>
 
-    <div class="container d-flex justify-content-center pt-3 pb-5">
-        <button class="btnMouse" id="btnColor">Finalizar Proyecto</button>
-    </div>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const btnColor = document.getElementById("btnColor");
-            const colorEfect = document.getElementById("colorEfect");
-
-            // Cargar estado desde localStorage
-            let estado = localStorage.getItem("estadoProyecto") === "true";
-
-            // Función para actualizar la UI
-            function actualizarUI() {
-                if (estado) {
-                    btnColor.textContent = "Retomar Proyecto";
-                    
-                    colorEfect.classList.remove("amarillo");
-                    colorEfect.classList.add("verde");
-                } else {
-                    btnColor.textContent = "Finalizar Proyecto";
-                    colorEfect.classList.remove("verde");
-                    colorEfect.classList.add("amarillo");
-                }
-            }
-
-            // Inicializar UI con estado guardado
-            actualizarUI();
-
-            // Evento de clic para cambiar estado
-            btnColor.addEventListener("click", () => {
-                estado = !estado;
-                localStorage.setItem("estadoProyecto", estado);
-                actualizarUI();
-            });
-        });
-    </script>
 
 </body>
 
