@@ -1,0 +1,65 @@
+body, * {
+    list-style-type: none !important;
+    text-decoration: none !important;
+}
+
+
+/* Animación para las imágenes del navbar */
+.nav-icon {
+    width: 30px;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+
+.logo-Nav {
+    width: 30%;
+}
+
+.custom-card {
+    box-shadow: 0px 0px 4px rgba(241, 196, 15, 0.6);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #f1c40f;
+    box-shadow: 0 2px 10px rgba(241, 196, 15, 0.4);
+}
+
+
+/* Button */
+
+.btnMouse {
+    padding: 5px 10px;
+    color: #f1c40f;
+    background-color: transparent;
+    border: 1px solid rgba(241, 196, 15, 0.4);
+    box-shadow: 0 0 4px rgba(241, 196, 15, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.btnMouse:hover {
+    color: #fff;
+    background-color: rgba(241, 196, 15, 0.6);
+    box-shadow: 0 2px 10px rgba(241, 196, 15, 0.6);
+}
+
+
+/* Fondo - Card */
+
+.fondoCrd {
+    background-color: transparent;
+}
+
+
+
+.uppercase {
+    text-transform: uppercase;
+    
+}
