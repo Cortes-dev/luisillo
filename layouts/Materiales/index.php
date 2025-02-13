@@ -19,100 +19,135 @@
             border-radius: 50%;
             display: inline-block;
         }
-
-        .amarillo {
-            background-color: yellow;
-        }
-
-        .verde {
-            background-color: green;
-        }
     </style>
+
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container d-flex justify-content-between align-items-center position-relative">
-            <a class="navbar-brand" href="#">
-                <img class="logo-Nav" src="../../images/prossesa.png" alt="Logo">
-            </a>
-            <h1 class="position-absolute start-50 translate-middle-x text-white">Proyecto 1</h1>
-            <div class="colorEfect" id="colorEfect"></div>
-        </div>
-    </nav>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container d-flex justify-content-between align-items-center position-relative">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img class="logo-Nav" src="../../images/prossesa.png" alt="Logo">
+        </a>
+
+        <!-- Título centrado -->
+        <h1 class="position-absolute start-50 translate-middle-x text-white">Proyecto 1</h1>
+
+        <!-- Bolita animada -->
+        <div class="color-ball" id="colorEfect"></div>
+    </div>
+</nav>
 
     <!-- Sección de título -->
     <section class="py-3">
         <div class="container">
-            <div class="row align-items-center justify-content-between text-center text-lg-start">
-                <div class="col-12 col-lg-auto mb-3 mb-lg-0">
-                    <h1 class="fw-bold m-0">
-                        <a href="../../layouts/activos/index.php" class="text-dark text-decoration-none">&larr;</a>
-                    </h1>
-                </div>
-                <div class="col-12 col-lg-auto">
-                    <h1 class="fw-bold text-dark text-center text-lg-start">Materiales</h1>
-                </div>
-                <div class="col-12 col-lg-auto d-flex justify-content-center justify-content-lg-end">
-                    <button class="btnMouse">
-                        <img src="../../images/imprimir.svg" alt="Imprimir">
-                    </button>
-                </div>
-            </div>
+            <h1 class="fw-bold text-dark text-center">Materiales</h1>
         </div>
     </section>
 
     <!-- Contenido -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-3 d-flex flex-column align-items-start align-items-lg-end gap-4 mb-4 mb-lg-0">
-                <a href="../Materiales/index.php" class="btnMouse w-100 w-lg-auto">Datos Generales</a>
-                <a href="#" class="btnMouse w-100 w-lg-auto">Mano de obra</a>
-                <a href="#" class="btnMouse w-100 w-lg-auto">Cronograma</a>
+            <div class="col-12 col-lg-3 d-flex flex-column align-items-start gap-4 mb-4">
+                <a href="../Materiales/index.php" class=" btnMouse w-100">Datos Generales</a>
+                <a href="#" class="w-100 btnMouse ">Mano de obra</a>
+                <a href="#" class="w-100 btnMouse ">Cronograma</a>
             </div>
             <div class="col-12 col-lg-8">
-                <div class="table-responsive">
-                    <table class="table table-bordered table-striped table-hover">
-                        <tbody>
-                            <tr><th class="p-3">Nombre del Cliente</th><td class="p-3 text-dark">Cliente</td></tr>
-                            <tr><th class="p-3">Número de Serie</th><td class="p-3 text-dark">3487VTR75</td></tr>
-                            <tr><th class="p-3">Número de Proyecto</th><td class="p-3 text-dark">001-2024</td></tr>
-                            <tr><th class="p-3">Medidas</th><td class="p-3 text-dark">8' x 40'</td></tr>
-                            <tr><th class="p-3">Fecha de Inicio</th><td class="p-3 text-dark">28-Nov-2024</td></tr>
-                            <tr><th class="p-3">Fecha de Terminación</th><td class="p-3 text-dark">15-Ene-25</td></tr>
-                            <tr><th class="p-3">Precio Venta</th><td class="p-3 text-dark">$425,000</td></tr>
-                            <tr><th class="p-3">Utilidad Bruta</th><td class="p-3 text-dark">$272,295</td></tr>
-                            <tr><th class="p-3">Porcentaje</th><td class="p-3 text-dark">64%</td></tr>
-                            <tr><th class="p-3">Descripción Proyecto</th><td class="p-3 text-dark">Proyecto para la empresa X, con detallados en X y ...</td></tr>
-                        </tbody>
-                    </table>
+                <div class="border p-4">
+                    <h5 class="text-center">Búsqueda Por Código</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label">Código</label>
+                            <select id="codigo" class="form-select">
+                                <option selected>Selecciona un código</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidad" class="form-label">Cantidad</label>
+                            <select id="cantidad" class="form-select">
+                                <option selected>Selecciona cantidad</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fecha" class="form-label">Fecha de carga</label>
+                            <input type="date" id="fecha" class="form-control">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="container mt-4">
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Tipo de Material</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Soldador</td>
+                <td>$33,230</td>
+            </tr>
+            <tr>
+                <td>Pintor</td>
+                <td>$15,410</td>
+            </tr>
+            <tr>
+                <td>Eléctrico</td>
+                <td>$20,500</td>
+            </tr>
+            <tr>
+                <td>Auxiliares</td>
+                <td>$6,235</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="text-white text-center fw-bold p-2 bg-dark">
+        Total Materiales <span class="ms-3">$105,725</span>
+    </div>
+
+    <div class="text-white text-center fw-bold p-2 bg-dark mt-1">
+        Total Mano de Obra y Materiales <span class="ms-3">$105,725</span>
+    </div>
+</div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const btnColor = document.getElementById("btnColor");
             const colorEfect = document.getElementById("colorEfect");
+
+            // Cargar estado desde localStorage
             let estado = localStorage.getItem("estadoProyecto") === "true";
 
+            // Función para actualizar la UI
             function actualizarUI() {
-                btnColor.textContent = estado ? "Retomar Proyecto" : "Finalizar Proyecto";
-                colorEfect.classList.toggle("verde", estado);
-                colorEfect.classList.toggle("amarillo", !estado);
+                if (estado) {
+
+                    colorEfect.classList.remove("amarillo");
+                    colorEfect.classList.add("verde");
+                } else {
+                    colorEfect.classList.remove("verde");
+                    colorEfect.classList.add("amarillo");
+                }
             }
 
+            // Inicializar UI con estado guardado
             actualizarUI();
 
-            btnColor?.addEventListener("click", () => {
-                estado = !estado;
-                localStorage.setItem("estadoProyecto", estado);
-                actualizarUI();
-            });
         });
     </script>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
