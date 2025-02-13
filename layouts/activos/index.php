@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 
-<body style="background-color: #020712; color: #fff;">
+<body>
 
 
 
@@ -67,7 +67,7 @@
                 include "../../components/card.php";
 
                 for ($i = 0; $i < 7; $i++) {
-                    card("../../images/cross-sign.webp", "Proyecto " . ($i), "../DtsGenerales/index.php");
+                    card("../../images/container-alv.webp", "Proyecto " . ($i), "../DtsGenerales/index.php");
                 }
 
                 ?>

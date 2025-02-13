@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background-color: #020712; color: #fff;">
+<body>
 
     <!--//! Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -56,23 +56,24 @@
             <?php
             include "components/card.php";
 
-            card("./images/cross-sign.webp", "Activos", "./layouts/activos/index.php");
-            card("./images/cross-sign.webp", "Finalizados", "#");
-            card("./images/cross-sign.webp", "Todos", "#");
+            card("./images/container-alv.webp", "Activos", "./layouts/activos/index.php");
+            card("./images/container-alv.webp", "Finalizados", "#");
+            card("./images/container-alv.webp", "Todos", "#");
             ?>
         </div>
     </div>
 
 
+
+    <!-- Modal Registro Proyecto -->
+    <?php include "components/ModalProssesa.php"; ?>
     <div class="container pb-5">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-                <button class="btnMouse text-center">Agregar</button>
+                <button class="btnMouse text-center" data-bs-toggle="modal" data-bs-target="#registroProyectoModal">Agregar</button>
             </div>
         </div>
     </div>
-
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>

@@ -19,16 +19,7 @@ body, * {
     width: 30%;
 }
 
-.custom-card {
-    box-shadow: 0px 0px 4px rgba(241, 196, 15, 0.6);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
-}
 
-.custom-card:hover {
-    transform: translateY(-10px);
-    border: 1px solid #f1c40f;
-    box-shadow: 0 2px 10px rgba(241, 196, 15, 0.4);
-}
 
 
 /* Button */
@@ -55,12 +46,36 @@ body, * {
 /* Fondo - Card */
 
 .fondoCrd {
-    background-color: transparent;
+    background-color: #fff;
 }
-
 
 
 .uppercase {
     text-transform: uppercase;
-    
+    font-weight: bold;
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.image-cover {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.image-cover:hover {
+    transform: scale(1.07);
+}
+
+.custom-card {
+    box-shadow: 0px 0px 4px rgba(241, 196, 15, 0.6);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+    overflow: hidden; /* Evita desbordamiento */
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    border: 1px solid #f1c40f;
+    box-shadow: 0 2px 10px rgba(241, 196, 15, 0.4);
 }

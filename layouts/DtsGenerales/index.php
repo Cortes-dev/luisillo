@@ -22,10 +22,6 @@
             color: #fff;
         }
 
-        body {
-            background-color: #020712;
-            color: #fff;
-        }
 
         .colorEfect {
             width: 40px;
@@ -63,7 +59,7 @@
         </a>
 
         <!-- Título centrado -->
-        <h1 class="position-absolute start-50 translate-middle-x">Proyecto 1</h1>
+        <h1 class="position-absolute start-50 translate-middle-x text-white">Proyecto 1</h1>
 
         <!-- Bolita animada -->
         <div class="color-ball" id="colorEfect"></div>
