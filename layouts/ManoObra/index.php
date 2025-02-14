@@ -58,7 +58,7 @@
     <!-- Sección de título -->
     <section class="py-3">
         <div class="container">
-            <h1 class="fw-bold text-dark text-center">Materiales</h1>
+            <h1 class="fw-bold text-dark text-center">Mano de obra</h1>
         </div>
     </section>
 
@@ -67,19 +67,16 @@
         <div class="row">
             <div class="col-12 col-lg-3 d-flex flex-column align-items-start gap-4 mb-4">
                 <a href="../Materiales/index.php" class=" btnMouse w-100">Datos Generales</a>
-                <a href="../ManoObra/index.php" class="w-100 btnMouse ">Mano de obra</a>
+                <a href="../Materiales/index.php" class="w-100 btnMouse ">Materiales</a>
                 <a href="#" class="w-100 btnMouse ">Cronograma</a>
             </div>
             <div class="col-12 col-lg-8">
                 <div class="border p-4">
                     <form>
-                        <input type="text" class="form-control mb-3" placeholder="Buscar por Codigo">
-                    </form>
-                    <form>
                         <div class="mb-3">
-                            <label for="codigo" class="form-label">Código</label>
+                            <label for="codigo" class="form-label">Especialidades</label>
                             <select id="codigo" class="form-select">
-                                <option selected>Selecciona un código</option>
+                                <option selected>Selecciona</option>
                             </select>
                         </div>
                         <div class="mb-3">
@@ -105,33 +102,45 @@
         <table class="table table-bordered text-center">
             <thead class="table-dark">
                 <tr>
-                    <th>Tipo de Material</th>
+                    <th>Especialidad</th>
+                    <th>Cantidad</th>
+                    <th>Costo Dia</th>
+                    <th>Dias laborados</th>
                     <th>Total</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Soldador</td>
-                    <td>$33,230</td>
+                    <td>3</td>
+                    <td>$500</td>
+                    <td>4</td>
+                    <td>$2,000</td>
                 </tr>
                 <tr>
                     <td>Pintor</td>
-                    <td>$15,410</td>
+                    <td>2</td>
+                    <td>$400</td>
+                    <td>3</td>
+                    <td>$1,200</td>
                 </tr>
                 <tr>
-                    <td>Eléctrico</td>
-                    <td>$20,500</td>
+                    <td>Electricista</td>
+                    <td>1</td>
+                    <td>$300</td>
+                    <td>3</td>
+                    <td>$900</td>
                 </tr>
                 <tr>
-                    <td>Auxiliares</td>
-                    <td>$6,235</td>
+                    <td>auxiliares</td>
+                    <td>2</td>
+                    <td>$200</td>
+                    <td>2</td>
+                    <td>$800</td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="text-white text-center fw-bold p-2 bg-dark">
-            Total Materiales <span class="ms-3">$105,725</span>
-        </div>
 
         <div class="text-white text-center fw-bold p-2 bg-dark mt-1">
             Total Mano de Obra y Materiales <span class="ms-3">$105,725</span>
